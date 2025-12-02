@@ -1,0 +1,18 @@
+---
+version: 2
+updates:
+  # --- DART / PUB Configuration ---
+  - package-ecosystem: 'pub'
+    directory: '/'
+    schedule:
+      interval: 'weekly'
+    commit-message:
+      prefix: 'deps'
+      include: 'scope'
+    labels:
+      - 'deps'
+    groups:
+      mobile-prod-deps:
+        dependency-type: 'production'
+      mobile-dev-deps:
+        dependency-type: 'development'

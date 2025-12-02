@@ -3,7 +3,7 @@ description: A comprehensive mobile app for farmers, gardeners, and weather enth
 
 publish_to: 'none'
 
-version: 1.2.0+10
+version: 1.2.1+11
 repository: https://github.com/astraen-dev/RainVu
 
 environment:
@@ -77,6 +77,28 @@ flutter:
     - CHANGELOG.md
     - assets/
     - assets/icon/
+    - assets/fonts/
+
+  fonts:
+    - family: Readex Pro
+      fonts:
+        - asset: assets/fonts/ReadexPro-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/ReadexPro-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/ReadexPro-Bold.ttf
+          weight: 700
+
+    - family: Inter
+      fonts:
+        - asset: assets/fonts/Inter-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/Inter-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Inter-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Inter-Bold.ttf
+          weight: 700
 
 flutter_launcher_icons:
   android: true
