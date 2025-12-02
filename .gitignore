@@ -10,6 +10,25 @@ prompt.txt
 
 !pubspec.lock
 
+# Fonts
+/assets/fonts/ReadexPro-ExtraLight.ttf
+/assets/fonts/ReadexPro-Light.ttf
+/assets/fonts/ReadexPro-Medium.ttf
+/assets/fonts/Inter_24pt-Black.ttf
+/assets/fonts/Inter_24pt-BlackItalic.ttf
+/assets/fonts/Inter_24pt-BoldItalic.ttf
+/assets/fonts/Inter_24pt-ExtraBold.ttf
+/assets/fonts/Inter_24pt-ExtraBoldItalic.ttf
+/assets/fonts/Inter_24pt-ExtraLight.ttf
+/assets/fonts/Inter_24pt-ExtraLightItalic.ttf
+/assets/fonts/Inter_24pt-Italic.ttf
+/assets/fonts/Inter_24pt-Light.ttf
+/assets/fonts/Inter_24pt-LightItalic.ttf
+/assets/fonts/Inter_24pt-MediumItalic.ttf
+/assets/fonts/Inter_24pt-SemiBoldItalic.ttf
+/assets/fonts/Inter_24pt-Thin.ttf
+/assets/fonts/Inter_24pt-ThinItalic.ttf
+
 # Firebase
 google-services.json
 GoogleService-Info.plist

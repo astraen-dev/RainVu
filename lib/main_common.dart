@@ -8,6 +8,7 @@ import "package:flutter/services.dart";
 import "package:flutter_native_splash/flutter_native_splash.dart";
 import "package:flutter_riverpod/flutter_riverpod.dart";
 import "package:go_router/go_router.dart";
+import "package:google_fonts/google_fonts.dart";
 import "package:rainvu/core/data/local/shared_prefs.dart";
 import "package:rainvu/core/firebase/telemetry_manager.dart";
 import "package:rainvu/core/navigation/app_router.dart";
@@ -23,6 +24,9 @@ Future<void> mainCommon(final FirebaseOptions firebaseOptions) async {
       final WidgetsBinding widgetsBinding =
           WidgetsFlutterBinding.ensureInitialized();
       FlutterNativeSplash.preserve(widgetsBinding: widgetsBinding);
+
+      // Disable runtime fetching of fonts
+      GoogleFonts.config.allowRuntimeFetching = false;
 
       await SystemChrome.setPreferredOrientations([
         DeviceOrientation.portraitUp,
