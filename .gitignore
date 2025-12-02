@@ -8,6 +8,8 @@ design_docs/
 .env*
 prompt.txt
 
+!pubspec.lock
+
 # Firebase
 google-services.json
 GoogleService-Info.plist
