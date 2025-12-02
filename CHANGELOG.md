@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.2.1] - 2025-12-02
+
+### Changed
+
+- **UI & Performance**: Refreshed the app's typography using `Readex Pro` and `Inter` for a cleaner, more readable experience. Fonts are now bundled directly within the app, which improves startup time and ensures a consistent look even when you're offline.
+- **Dependencies**: Updated core dependencies to their latest versions for enhanced performance and security.
+
 ## [1.2.0] - 2025-11-13
 
 ### Added
