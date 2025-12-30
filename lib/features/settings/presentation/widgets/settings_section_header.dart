@@ -9,15 +9,12 @@ class SettingsSectionHeader extends StatelessWidget {
 
   @override
   Widget build(final BuildContext context) => Padding(
-        padding: const EdgeInsets.fromLTRB(
-          AppConstants.horiEdgePadding,
-          24,
-          AppConstants.horiEdgePadding,
-          8,
-        ),
-        child: Text(
-          title,
-          style: Theme.of(context).textTheme.labelLarge,
-        ),
-      );
+    padding: const EdgeInsets.fromLTRB(
+      AppConstants.horiEdgePadding,
+      24,
+      AppConstants.horiEdgePadding,
+      8,
+    ),
+    child: Text(title, style: Theme.of(context).textTheme.labelLarge),
+  );
 }

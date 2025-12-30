@@ -82,12 +82,7 @@ class ChangeItemTile extends StatelessWidget {
           ),
         );
       } else if (codeText != null) {
-        spans.add(
-          TextSpan(
-            text: " $codeText ",
-            style: codeStyle,
-          ),
-        );
+        spans.add(TextSpan(text: " $codeText ", style: codeStyle));
       }
       lastMatchEnd = match.end;
     }

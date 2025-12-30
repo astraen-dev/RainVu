@@ -13,10 +13,7 @@ abstract class RainfallEntry with _$RainfallEntry {
     required final String gaugeId,
     required final String unit,
     final String? id,
-    @JsonKey(
-      includeFromJson: false,
-      includeToJson: false,
-    )
+    @JsonKey(includeFromJson: false, includeToJson: false)
     final RainGauge? gauge,
   }) = _RainfallEntry;
 

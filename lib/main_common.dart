@@ -86,7 +86,8 @@ class MyApp extends ConsumerWidget {
     return MaterialApp.router(
       scaffoldMessengerKey: snackbarKey,
       // ignore: do_not_use_environment
-      debugShowCheckedModeBanner: const String.fromEnvironment("app.flavor") == "dev",
+      debugShowCheckedModeBanner:
+          const String.fromEnvironment("app.flavor") == "dev",
       onGenerateTitle: (final context) => AppLocalizations.of(context).appName,
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,

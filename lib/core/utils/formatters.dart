@@ -19,7 +19,8 @@ String dateTimeFormat(
   }
 
   // Prefer the explicitly passed locale, otherwise get it from the context
-  final String effectiveLocale = locale ??
+  final String effectiveLocale =
+      locale ??
       (context != null
           ? Localizations.localeOf(context).toLanguageTag()
           : "en");

@@ -7,15 +7,15 @@ import "package:sqlite3/sqlite3.dart";
 import "package:sqlite3_flutter_libs/sqlite3_flutter_libs.dart";
 
 LazyDatabase openConnection() => LazyDatabase(() async {
-    final Directory dbFolder = await getApplicationDocumentsDirectory();
-    final file = File(p.join(dbFolder.path, "db.sqlite"));
+  final Directory dbFolder = await getApplicationDocumentsDirectory();
+  final file = File(p.join(dbFolder.path, "db.sqlite"));
 
-    if (Platform.isAndroid) {
-      await applyWorkaroundToOpenSqlite3OnOldAndroidVersions();
-    }
+  if (Platform.isAndroid) {
+    await applyWorkaroundToOpenSqlite3OnOldAndroidVersions();
+  }
 
-    final String cachebase = (await getTemporaryDirectory()).path;
-    sqlite3.tempDirectory = cachebase;
+  final String cachebase = (await getTemporaryDirectory()).path;
+  sqlite3.tempDirectory = cachebase;
 
-    return NativeDatabase.createInBackground(file);
-  });
+  return NativeDatabase.createInBackground(file);
+});
