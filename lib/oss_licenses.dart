@@ -354,14 +354,14 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// _flutterfire_internals 1.3.64
+/// _flutterfire_internals 1.3.65
 const __flutterfire_internals = Package(
     name: '_flutterfire_internals',
     description: 'A package hosting Dart code shared between FlutterFire plugins.',
     homepage: 'https://firebase.google.com/docs/firestore',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/_flutterfire_internals',
     authors: [],
-    version: '1.3.64',
+    version: '1.3.65',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -2985,14 +2985,14 @@ const _custom_lint_visitor = Package(
    limitations under the License.''',
   );
 
-/// dart_pubspec_licenses 3.0.14
+/// dart_pubspec_licenses 3.0.15
 const _dart_pubspec_licenses = Package(
     name: 'dart_pubspec_licenses',
     description: 'A library to make it easy to extract OSS license information from Dart packages using pubspec.yaml',
     homepage: 'https://github.com/espresso3389/flutter_oss_licenses/tree/master/packages/dart_pubspec_licenses',
     repository: 'https://github.com/espresso3389/flutter_oss_licenses',
     authors: [],
-    version: '3.0.14',
+    version: '3.0.15',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -3511,14 +3511,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// drift 2.29.0
+/// drift 2.30.0
 const _drift = Package(
     name: 'drift',
     description: 'Drift is a reactive library to store relational data in Dart and Flutter applications.',
     homepage: 'https://drift.simonbinder.eu/',
     repository: 'https://github.com/simolus3/drift',
     authors: [],
-    version: '2.29.0',
+    version: '2.30.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -3547,14 +3547,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// drift_dev 2.29.0
+/// drift_dev 2.30.0
 const _drift_dev = Package(
     name: 'drift_dev',
     description: 'Dev-dependency for users of drift. Contains the generator and development tools.',
     homepage: 'https://drift.simonbinder.eu/',
     repository: 'https://github.com/simolus3/drift',
     authors: [],
-    version: '2.29.0',
+    version: '2.30.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -3583,14 +3583,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// drift_flutter 0.2.7
+/// drift_flutter 0.2.8
 const _drift_flutter = Package(
     name: 'drift_flutter',
     description: 'Easily set up drift databases across platforms in Flutter apps.',
     homepage: 'https://drift.simonbinder.eu/',
     repository: 'https://github.com/simolus3/drift',
     authors: [],
-    version: '0.2.7',
+    version: '0.2.8',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -3951,14 +3951,14 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// file_picker 10.3.7
+/// file_picker 10.3.8
 const _file_picker = Package(
     name: 'file_picker',
     description: 'A package that allows you to use a native file explorer to pick single or multiple absolute file paths, with extension filtering support.',
     homepage: 'https://github.com/miguelpruivo/plugins_flutter_file_picker',
     repository: 'https://github.com/miguelpruivo/flutter_file_picker',
     authors: [],
-    version: '10.3.7',
+    version: '10.3.8',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -3987,14 +3987,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// firebase_analytics 12.0.4
+/// firebase_analytics 12.1.0
 const _firebase_analytics = Package(
     name: 'firebase_analytics',
     description: 'Flutter plugin for Google Analytics for Firebase, an app measurement solution that provides insight on app usage and user engagement on Android and iOS.',
     homepage: 'https://firebase.google.com/docs/analytics',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_analytics/firebase_analytics',
     authors: [],
-    version: '12.0.4',
+    version: '12.1.0',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4028,14 +4028,14 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_analytics_platform_interface 5.0.4
+/// firebase_analytics_platform_interface 5.0.5
 const _firebase_analytics_platform_interface = Package(
     name: 'firebase_analytics_platform_interface',
     description: 'A common platform interface for the firebase_analytics plugin.',
     homepage: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_analytics/firebase_analytics_platform_interface',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_analytics/firebase_analytics_platform_interface',
     authors: [],
-    version: '5.0.4',
+    version: '5.0.5',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4069,14 +4069,14 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_analytics_web 0.6.1
+/// firebase_analytics_web 0.6.1+1
 const _firebase_analytics_web = Package(
     name: 'firebase_analytics_web',
     description: 'The web implementation of firebase_analytics',
     homepage: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_analytics/firebase_analytics_web',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_analytics/firebase_analytics_web',
     authors: [],
-    version: '0.6.1',
+    version: '0.6.1+1',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4110,14 +4110,14 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_core 4.2.1
+/// firebase_core 4.3.0
 const _firebase_core = Package(
     name: 'firebase_core',
     description: 'Flutter plugin for Firebase Core, enabling connecting to multiple Firebase apps.',
     homepage: 'https://firebase.google.com/docs/flutter/setup',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_core/firebase_core',
     authors: [],
-    version: '4.2.1',
+    version: '4.3.0',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4194,14 +4194,14 @@ const _firebase_core_platform_interface = Package(
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_core_web 3.3.0
+/// firebase_core_web 3.3.1
 const _firebase_core_web = Package(
     name: 'firebase_core_web',
     description: 'The web implementation of firebase_core',
     homepage: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_core/firebase_core_web',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_core/firebase_core_web',
     authors: [],
-    version: '3.3.0',
+    version: '3.3.1',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4236,14 +4236,14 @@ const _firebase_core_web = Package(
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_crashlytics 5.0.5
+/// firebase_crashlytics 5.0.6
 const _firebase_crashlytics = Package(
     name: 'firebase_crashlytics',
     description: 'Flutter plugin for Firebase Crashlytics. It reports uncaught errors to the Firebase console.',
     homepage: 'https://firebase.google.com/docs/crashlytics',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_crashlytics/firebase_crashlytics',
     authors: [],
-    version: '5.0.5',
+    version: '5.0.6',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4278,14 +4278,14 @@ const _firebase_crashlytics = Package(
 // OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// firebase_crashlytics_platform_interface 3.8.15
+/// firebase_crashlytics_platform_interface 3.8.16
 const _firebase_crashlytics_platform_interface = Package(
     name: 'firebase_crashlytics_platform_interface',
     description: 'A common platform interface for the firebase_crashlytics plugin.',
     homepage: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_crashlytics/firebase_crashlytics_platform_interface',
     repository: 'https://github.com/firebase/flutterfire/tree/main/packages/firebase_crashlytics/firebase_crashlytics_platform_interface',
     authors: [],
-    version: '3.8.15',
+    version: '3.8.16',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4396,13 +4396,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// flutter 3.38.3
+/// flutter 3.38.4
 const _flutter = Package(
     name: 'flutter',
     description: 'A framework for writing Flutter applications',
     homepage: 'https://flutter.dev',
     authors: [],
-    version: '3.38.3',
+    version: '3.38.4',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: true,
@@ -4589,13 +4589,13 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// flutter_markdown_plus 1.0.5
+/// flutter_markdown_plus 1.0.7
 const _flutter_markdown_plus = Package(
     name: 'flutter_markdown_plus',
     description: 'A Markdown renderer for Flutter. Create rich text output, including text styles, tables, links, and more, from plain text data formatted with simple Markdown tags.',
     repository: 'https://github.com/foresightmobile/flutter_markdown_plus',
     authors: [],
-    version: '1.0.5',
+    version: '1.0.7',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -4702,7 +4702,7 @@ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// flutter_riverpod 3.0.3
+/// flutter_riverpod 3.1.0
 const _flutter_riverpod = Package(
     name: 'flutter_riverpod',
     description: '''A reactive caching and data-binding framework. Riverpod makes working with asynchronous code a breeze.
@@ -4710,7 +4710,7 @@ const _flutter_riverpod = Package(
     homepage: 'https://riverpod.dev',
     repository: 'https://github.com/rrousselGit/riverpod',
     authors: [],
-    version: '3.0.3',
+    version: '3.1.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -4981,13 +4981,13 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// go_router 17.0.0
+/// go_router 17.0.1
 const _go_router = Package(
     name: 'go_router',
     description: 'A declarative router for Flutter based on Navigation 2 supporting deep linking, data-driven routes and more',
     repository: 'https://github.com/flutter/packages/tree/main/packages/go_router',
     authors: [],
-    version: '17.0.0',
+    version: '17.0.1',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
@@ -5139,7 +5139,7 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// hooks_riverpod 3.0.3
+/// hooks_riverpod 3.1.0
 const _hooks_riverpod = Package(
     name: 'hooks_riverpod',
     description: '''A reactive caching and data-binding framework. Riverpod makes working with asynchronous code a breeze.
@@ -5147,7 +5147,7 @@ const _hooks_riverpod = Package(
     homepage: 'https://riverpod.dev',
     repository: 'https://github.com/rrousselGit/riverpod',
     authors: [],
-    version: '3.0.3',
+    version: '3.1.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -5553,18 +5553,18 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// image 4.5.4
+/// image 4.7.2
 const _image = Package(
     name: 'image',
     description: 'Dart Image Library provides server and web apps the ability to load, manipulate, and save images with various image file formats.',
     homepage: 'https://github.com/brendan-duncan/image',
     authors: [],
-    version: '4.5.4',
+    version: '4.7.2',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
     dependencies: [PackageRef('archive'), PackageRef('meta'), PackageRef('xml')],
-    devDependencies: [PackageRef('build_runner'), PackageRef('http'), PackageRef('lints'), PackageRef('test'), PackageRef('web')],
+    devDependencies: [PackageRef('build_runner'), PackageRef('http'), PackageRef('intl'), PackageRef('lints'), PackageRef('test'), PackageRef('web')],
     license: '''The MIT License
 
 Copyright (c) 2013-2022 Brendan Duncan.
@@ -5858,13 +5858,13 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// json_path 0.8.0
+/// json_path 0.9.0
 const _json_path = Package(
     name: 'json_path',
     description: 'Implementation of RFC 9535 - JSONPath: Query Expressions for JSON. Reads and writes values in parsed JSON objects using queries like `\$.store.book[2].price`.',
     homepage: 'https://github.com/f3ath/jessie',
     authors: [],
-    version: '0.8.0',
+    version: '0.9.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -6472,13 +6472,13 @@ const _material_color_utilities = Package(
    limitations under the License.''',
   );
 
-/// maybe_just_nothing 0.5.3
+/// maybe_just_nothing 0.6.0
 const _maybe_just_nothing = Package(
     name: 'maybe_just_nothing',
     description: 'Yet another variation of the good old Maybe monad with eager execution written in Dart.',
     homepage: 'https://github.com/f3ath/maybe-just-nothing',
     authors: [],
-    version: '0.5.3',
+    version: '0.6.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -7855,7 +7855,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// riverpod 3.0.3
+/// riverpod 3.1.0
 const _riverpod = Package(
     name: 'riverpod',
     description: '''A reactive caching and data-binding framework. Riverpod makes working with asynchronous code a breeze.
@@ -7863,7 +7863,7 @@ const _riverpod = Package(
     homepage: 'https://riverpod.dev',
     repository: 'https://github.com/rrousselGit/riverpod',
     authors: [],
-    version: '3.0.3',
+    version: '3.1.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -7892,17 +7892,17 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// riverpod_analyzer_utils 1.0.0-dev.7
+/// riverpod_analyzer_utils 1.0.0-dev.8
 const _riverpod_analyzer_utils = Package(
     name: 'riverpod_analyzer_utils',
     description: 'A project for analyzing Riverpod code. This is internally used by riverpod_lint and riverpod_generator',
     repository: 'https://github.com/rrousselGit/river_pod',
     authors: [],
-    version: '1.0.0-dev.7',
+    version: '1.0.0-dev.8',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
-    dependencies: [PackageRef('analyzer'), PackageRef('analyzer_buffer'), PackageRef('collection'), PackageRef('crypto'), PackageRef('custom_lint_core'), PackageRef('freezed_annotation'), PackageRef('meta'), PackageRef('path'), PackageRef('source_span')],
+    dependencies: [PackageRef('analyzer'), PackageRef('analyzer_buffer'), PackageRef('collection'), PackageRef('crypto'), PackageRef('freezed_annotation'), PackageRef('meta'), PackageRef('path'), PackageRef('source_span')],
     devDependencies: [PackageRef('build'), PackageRef('build_runner'), PackageRef('freezed'), PackageRef('lints'), PackageRef('test')],
     license: '''MIT License
 
@@ -7927,13 +7927,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// riverpod_annotation 3.0.3
+/// riverpod_annotation 4.0.0
 const _riverpod_annotation = Package(
     name: 'riverpod_annotation',
     description: 'A package exposing annotations for riverpod_generator',
     repository: 'https://github.com/rrousselGit/riverpod',
     authors: [],
-    version: '3.0.3',
+    version: '4.0.0',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -7962,13 +7962,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// riverpod_generator 3.0.3
+/// riverpod_generator 4.0.0+1
 const _riverpod_generator = Package(
     name: 'riverpod_generator',
     description: 'A code generator for Riverpod. This both simplifies the syntax empowers it, such as allowing stateful hot-reload.',
     repository: 'https://github.com/rrousselGit/riverpod',
     authors: [],
-    version: '3.0.3',
+    version: '4.0.0+1',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -8513,19 +8513,19 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// shared_preferences 2.5.3
+/// shared_preferences 2.5.4
 const _shared_preferences = Package(
     name: 'shared_preferences',
     description: 'Flutter plugin for reading and writing simple key-value pairs. Wraps NSUserDefaults on iOS and SharedPreferences on Android.',
     repository: 'https://github.com/flutter/packages/tree/main/packages/shared_preferences/shared_preferences',
     authors: [],
-    version: '2.5.3',
+    version: '2.5.4',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
     dependencies: [PackageRef('flutter'), PackageRef('shared_preferences_android'), PackageRef('shared_preferences_foundation'), PackageRef('shared_preferences_linux'), PackageRef('shared_preferences_platform_interface'), PackageRef('shared_preferences_web'), PackageRef('shared_preferences_windows')],
     devDependencies: [PackageRef('path')],
-    license: '''Copyright 2013 The Flutter Authors. All rights reserved.
+    license: '''Copyright 2013 The Flutter Authors
 
 Redistribution and use in source and binary forms, with or without modification,
 are permitted provided that the following conditions are met:
@@ -9441,14 +9441,14 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// sqlparser 0.42.0
+/// sqlparser 0.42.1
 const _sqlparser = Package(
     name: 'sqlparser',
     description: 'Parses sqlite statements and performs static analysis on them',
     homepage: 'https://github.com/simolus3/drift/tree/develop/sqlparser',
     repository: 'https://github.com/simolus3/drift',
     authors: [],
-    version: '0.42.0',
+    version: '0.42.1',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
@@ -10783,18 +10783,18 @@ THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
 OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.''',
   );
 
-/// watcher 1.1.4
+/// watcher 1.2.0
 const _watcher = Package(
     name: 'watcher',
     description: 'A file system watcher. It monitors changes to contents of directories and sends notifications when files have been added, removed, or modified.',
     repository: 'https://github.com/dart-lang/tools/tree/main/pkgs/watcher',
     authors: [],
-    version: '1.1.4',
+    version: '1.2.0',
     spdxIdentifiers: ['BSD-3-Clause'],
     isMarkdown: false,
     isSdk: false,
     dependencies: [PackageRef('async'), PackageRef('path')],
-    devDependencies: [PackageRef('test')],
+    devDependencies: [PackageRef('clock'), PackageRef('fake_async'), PackageRef('test')],
     license: '''Copyright 2014, the Dart project authors. 
 
 Redistribution and use in source and binary forms, with or without
