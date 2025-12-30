@@ -1,5 +1,11 @@
 # Changelog
 
+## [1.2.2] - 2025-12-30
+
+### Changed
+
+- **Dependencies**: Updated core dependencies to their latest versions for enhanced performance and security.
+
 ## [1.2.1] - 2025-12-02
 
 ### Changed
