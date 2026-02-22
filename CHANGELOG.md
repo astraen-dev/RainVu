@@ -1,5 +1,17 @@
 # Changelog
 
+## [1.2.2] - 2026-02-22
+
+### Changed
+
+- **Rainfall Entries Screen**: Enhanced the filtering experience with a new month picker for quick navigation and a responsive layout that adapts to various screen sizes.
+- **Dependencies**: Updated core dependencies to their latest versions for improved performance and security.
+
+### Fixed
+
+- **UI**: Corrected a layout overflow on the rainfall entries screen that occurred when there was no data to display.
+- **Changelog**: Resolved a font-loading error on the changelog screen by bundling the `Roboto Mono` font within the app.
+
 ## [1.2.1] - 2025-12-02
 
 ### Changed

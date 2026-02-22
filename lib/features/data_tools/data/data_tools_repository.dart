@@ -236,7 +236,7 @@ class DriftDataToolsRepository implements DataToolsRepository {
         item.gauge?.name ?? "",
       ]);
     }
-    return const ListToCsvConverter().convert(rows);
+    return const CsvEncoder().convert(rows);
   }
 
   Future<_ParsedData> _parseFile(final File file) async {
@@ -388,9 +388,7 @@ class DriftDataToolsRepository implements DataToolsRepository {
   }
 
   _ParsedData _parseCsvContent(final String content) {
-    final List<List<dynamic>> rows = const CsvToListConverter().convert(
-      content,
-    );
+    final List<List<dynamic>> rows = const CsvDecoder().convert(content);
 
     // If file is empty or only has a header, there's no data to parse.
     if (rows.length < 2) {
