@@ -460,33 +460,35 @@ class _EmptyState extends StatelessWidget {
     final AppLocalizations l10n = AppLocalizations.of(context);
 
     return Center(
-      child: Padding(
-        padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 48),
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            Icon(
-              Icons.cloud_off_outlined,
-              size: 64,
-              color: colorScheme.onSurfaceVariant.withValues(alpha: 0.5),
-            ),
-            const SizedBox(height: 24),
-            Text(
-              l10n.rainfallEntriesEmptyTitle,
-              style: textTheme.headlineSmall,
-              textAlign: TextAlign.center,
-            ),
-            const SizedBox(height: 12),
-            Text(
-              l10n.rainfallEntriesEmptyMessage,
-              style: textTheme.bodyMedium?.copyWith(
-                color: colorScheme.onSurfaceVariant,
+      child: SingleChildScrollView(
+        child: Padding(
+          padding: const EdgeInsets.symmetric(horizontal: 32, vertical: 48),
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            children: [
+              Icon(
+                Icons.cloud_off_outlined,
+                size: 64,
+                color: colorScheme.onSurfaceVariant.withValues(alpha: 0.5),
               ),
-              textAlign: TextAlign.center,
-            ),
-          ],
-        ),
-      ).animate().fade(duration: 500.ms).scale(begin: const Offset(0.95, 0.95)),
+              const SizedBox(height: 24),
+              Text(
+                l10n.rainfallEntriesEmptyTitle,
+                style: textTheme.headlineSmall,
+                textAlign: TextAlign.center,
+              ),
+              const SizedBox(height: 12),
+              Text(
+                l10n.rainfallEntriesEmptyMessage,
+                style: textTheme.bodyMedium?.copyWith(
+                  color: colorScheme.onSurfaceVariant,
+                ),
+                textAlign: TextAlign.center,
+              ),
+            ],
+          ),
+        ).animate().fade(duration: 500.ms).scale(begin: const Offset(0.95, 0.95)),
+      ),
     );
   }
 }
