@@ -8,15 +8,20 @@ import "package:rainvu/app_constants.dart";
 import "package:rainvu/core/application/filter_provider.dart";
 import "package:rainvu/core/application/preferences_provider.dart";
 import "package:rainvu/core/data/providers/data_providers.dart";
+import "package:rainvu/core/data/repositories/rainfall_repository.dart";
 import "package:rainvu/core/utils/extensions.dart";
+import "package:rainvu/core/utils/snackbar_service.dart";
 import "package:rainvu/features/rainfall_entry/application/rainfall_entry_provider.dart";
 import "package:rainvu/features/rainfall_entry/presentation/widgets/rainfall_entry_list_item.dart";
 import "package:rainvu/l10n/app_localizations.dart";
 import "package:rainvu/shared/domain/rain_gauge.dart";
 import "package:rainvu/shared/domain/rainfall_entry.dart";
 import "package:rainvu/shared/domain/user_preferences.dart";
+import "package:rainvu/shared/utils/ui_helpers.dart";
+import "package:rainvu/shared/widgets/buttons/app_button.dart";
 import "package:rainvu/shared/widgets/filter_bar.dart";
 import "package:rainvu/shared/widgets/gauge_filter_dropdown.dart";
+import "package:rainvu/shared/widgets/pickers/month_year_picker.dart";
 import "package:rainvu/shared/widgets/placeholders.dart";
 import "package:shimmer/shimmer.dart";
 
@@ -39,31 +44,68 @@ class RainfallEntriesScreen extends ConsumerStatefulWidget {
 class _RainfallEntriesScreenState extends ConsumerState<RainfallEntriesScreen> {
   final Set<int> _animatedIndices = {};
   late String _selectedGaugeId;
+  late DateTime _selectedMonth;
 
   @override
   void initState() {
     super.initState();
     _selectedGaugeId = widget.gaugeId ?? allGaugesFilterId;
+    _selectedMonth = DateTime.tryParse("${widget.month}-01") ?? DateTime.now();
+  }
+
+  Future<void> _pickMonth() async {
+    final DateRangeResult? dateRange = ref.read(rainfallDateRangeProvider).value;
+
+    if (dateRange?.min == null || dateRange?.max == null) {
+      showSnackbar(
+        AppLocalizations.of(context).genericError,
+        type: MessageType.error,
+      );
+      return;
+    }
+
+    final DateTime? picked = await showMonthYearPicker(
+      context,
+      initialDate: _selectedMonth,
+      firstDate: dateRange!.min!,
+      lastDate: dateRange.max!,
+    );
+
+    if (picked != null &&
+        (picked.year != _selectedMonth.year ||
+            picked.month != _selectedMonth.month)) {
+      setState(() {
+        _selectedMonth = DateTime(picked.year, picked.month);
+        _animatedIndices.clear(); // Reset animations for new data
+      });
+    }
   }
 
   @override
   Widget build(final BuildContext context) {
     final ThemeData theme = Theme.of(context);
     final AppLocalizations l10n = AppLocalizations.of(context);
-    final DateTime selectedMonth =
-        DateTime.tryParse("${widget.month}-01") ?? DateTime.now();
     final String? filterGaugeId = _selectedGaugeId == allGaugesFilterId
         ? null
         : _selectedGaugeId;
 
     final AsyncValue<List<RainfallEntry>> entriesAsync = ref.watch(
-      rainfallEntriesForMonthProvider(selectedMonth, filterGaugeId),
+      rainfallEntriesForMonthProvider(_selectedMonth, filterGaugeId),
     );
+    final AsyncValue<DateRangeResult> dateRangeAsync = ref.watch(
+      rainfallDateRangeProvider,
+    );
+
+    final VoidCallback? onPickMonthCallback = dateRangeAsync.when(
+      data: (final data) =>
+      (data.min != null && data.max != null) ? _pickMonth : null,
+      loading: () => null,
+      error: (final _, final _) => null,
+    );
+
     final AsyncValue<RainGauge?> gaugeAsync = filterGaugeId != null
         ? ref.watch(gaugeByIdProvider(filterGaugeId))
         : const AsyncValue.data(null);
-
-    final String monthTitle = DateFormat.yMMMM().format(selectedMonth);
 
     return Scaffold(
       appBar: AppBar(
@@ -77,30 +119,30 @@ class _RainfallEntriesScreenState extends ConsumerState<RainfallEntriesScreen> {
             } else {
               gaugeName = gauge.name;
             }
-            final String fullTitle = "$monthTitle: $gaugeName";
-
             return Text(
-              fullTitle,
+              gaugeName,
               style: theme.textTheme.titleLarge,
               overflow: TextOverflow.ellipsis,
             );
           },
-          loading: () => Text(monthTitle, style: theme.textTheme.titleLarge),
+          loading: () => Text(l10n.loading, style: theme.textTheme.titleLarge),
           error: (final _, final _) =>
-              Text(monthTitle, style: theme.textTheme.titleLarge),
+              Text(l10n.appName, style: theme.textTheme.titleLarge),
         ),
       ),
       body: SafeArea(
         child: Column(
           children: [
             FilterBar(
-              child: GaugeFilterDropdown(
-                value: _selectedGaugeId,
-                onChanged: (final value) {
+              child: _RainfallEntriesFilters(
+                selectedGaugeId: _selectedGaugeId,
+                selectedMonth: _selectedMonth,
+                onGaugeChanged: (final value) {
                   if (value != null) {
                     setState(() => _selectedGaugeId = value);
                   }
                 },
+                onPickMonth: onPickMonthCallback,
               ),
             ),
             Expanded(
@@ -187,6 +229,72 @@ class _RainfallEntriesScreenState extends ConsumerState<RainfallEntriesScreen> {
       ),
     );
   }
+}
+
+/// A responsive widget for the filter controls in the [RainfallEntriesScreen].
+class _RainfallEntriesFilters extends StatelessWidget {
+  const _RainfallEntriesFilters({
+    required this.selectedGaugeId,
+    required this.selectedMonth,
+    required this.onGaugeChanged,
+    this.onPickMonth,
+  });
+
+  final String selectedGaugeId;
+  final DateTime selectedMonth;
+  final ValueChanged<String?> onGaugeChanged;
+  final VoidCallback? onPickMonth;
+
+  @override
+  Widget build(final BuildContext context) => LayoutBuilder(
+    builder: (final context, final constraints) {
+      const double breakpoint = 380;
+
+      if (constraints.maxWidth < breakpoint) {
+        // Vertical layout for smaller screens
+        return Column(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            GaugeFilterDropdown(
+              value: selectedGaugeId,
+              onChanged: onGaugeChanged,
+            ),
+            const SizedBox(height: 12),
+            AppButton(
+              label: DateFormat.yMMMM().format(selectedMonth),
+              onPressed: onPickMonth,
+              style: AppButtonStyle.secondary,
+              size: AppButtonSize.small,
+              icon: const Icon(Icons.calendar_today, size: 18),
+              isExpanded: true,
+            ),
+          ],
+        );
+      } else {
+        // Horizontal layout for larger screens
+        return Row(
+          children: [
+            Expanded(
+              child: GaugeFilterDropdown(
+                value: selectedGaugeId,
+                onChanged: onGaugeChanged,
+              ),
+            ),
+            const SizedBox(width: 16),
+            Expanded(
+              child: AppButton(
+                label: DateFormat.yMMMM().format(selectedMonth),
+                onPressed: onPickMonth,
+                style: AppButtonStyle.secondary,
+                size: AppButtonSize.small,
+                icon: const Icon(Icons.calendar_today, size: 18),
+              ),
+            ),
+          ],
+        );
+      }
+    },
+  );
 }
 
 class _LoadingState extends StatelessWidget {
