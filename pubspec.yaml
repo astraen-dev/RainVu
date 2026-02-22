@@ -80,6 +80,11 @@ flutter:
     - assets/fonts/
 
   fonts:
+    - family: Roboto Mono
+      fonts:
+        - asset: assets/fonts/RobotoMono-Regular.ttf
+          weight: 400
+
     - family: Readex Pro
       fonts:
         - asset: assets/fonts/ReadexPro-Regular.ttf
