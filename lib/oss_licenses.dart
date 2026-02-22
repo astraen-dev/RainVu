@@ -11268,13 +11268,13 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.''',
   );
 
-/// rainvu 1.2.1+11
+/// rainvu 1.2.2+13
 const _rainvu = Package(
     name: 'rainvu',
     description: 'A comprehensive mobile app for farmers, gardeners, and weather enthusiasts to meticulously log rainfall from multiple custom gauges and transform that data into actionable insights through powerful charting and historical analysis.',
     repository: 'https://github.com/astraen-dev/RainVu',
     authors: [],
-    version: '1.2.1+11',
+    version: '1.2.2+13',
     spdxIdentifiers: ['MIT'],
     isMarkdown: false,
     isSdk: false,
